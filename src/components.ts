@@ -1,0 +1,1 @@
+export {UIListComponent} from './components/ui-list/ui-list.component';
