@@ -1,1 +1,1 @@
-exports.components = require('./lib/components').components;
+exports.components = require('./dist/components').components;
