@@ -1,1 +1,1 @@
-export * from './dist/components';
+export declare var Components: any[];
