@@ -4,9 +4,9 @@
   "description": "A set of components for angular2 projects",
   "main": "app.js",
   "scripts": {
+    "watch": "tsc -p tsconfig.json -w",
+    "build": "rm -rf lib && tsc -p tsconfig.json",
     "postinstall": "typings install",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
     "typings": "typings"
   },
   "repository": {

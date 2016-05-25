@@ -7,13 +7,11 @@
     "moduleResolution": "node",
     "removeComments": true,
     "sourceMap": true,
-    "outDir": "./lib",
+    "outDir": "./dist",
     "declaration": true
   },
-  "exclude": [
-        "node_modules",
-        "lib",
-        "typings/main",
-        "typings/main.d.ts"
-    ]
+  "files": [
+    "src/components.ts",
+    "typings/main.d.ts"
+  ]
 }
