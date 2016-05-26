@@ -1,0 +1,1 @@
+export {UIModal} from './dist/providers/ui-modal.provider';
