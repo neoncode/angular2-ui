@@ -1,1 +1,1 @@
-export {UIModal} from './dist/providers/ui-modal.provider';
+export {UIModalService} from './dist/services/ui-modal.service';

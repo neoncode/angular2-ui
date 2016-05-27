@@ -1,2 +1,2 @@
 "use strict"
-exports.UIModal = require('./dist/providers/ui-modal.provider').UIModal;
+exports.UIModalService = require('./dist/services/ui-modal.service').UIModalService;
