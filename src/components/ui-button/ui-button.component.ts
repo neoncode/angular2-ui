@@ -17,7 +17,7 @@ export class UIButtonComponent {
 
 	constructor() { 
 		if (this.theme == null) { 
-			this.theme = 'secondary';
+			this.theme = 'secondary'; 
 		}
 
 		if (this.outline == null) {
