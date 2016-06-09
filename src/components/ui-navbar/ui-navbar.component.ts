@@ -4,9 +4,9 @@ import { Component, Input } from '@angular/core';
 @Component({ 
 	selector:'ui-navbar',
 	template: `
-		<div class="navbar navbar-light">
+		<nav class="navbar navbar-light bg-faded">
 			<ng-content></ng-content>
-		</div>
+		</nav>
 	`
 })
 export class UINavbarComponent { 
@@ -15,3 +15,5 @@ export class UINavbarComponent {
 
 	
 }
+
+
