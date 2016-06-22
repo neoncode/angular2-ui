@@ -107,7 +107,7 @@ export class UIModalService {
 
 export interface UIModalOptions { 
 	parent: ElementRef;
-	template: string;
-	templateUrl: string;
+	template?: string;
+	templateUrl?: string;
 	keyboard: boolean;
 }
