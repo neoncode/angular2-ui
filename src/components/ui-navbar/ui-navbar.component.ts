@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
 		nav { 
 			height: 50px;
 			box-shadow: 5px 5px 15px #888888;
+			margin-bottom: 100px;
 		}
 
 	`],

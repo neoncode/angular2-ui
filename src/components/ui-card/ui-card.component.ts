@@ -41,7 +41,7 @@ export class UICardComponent {
 		}
 	}
 
-	ngOnInit() {
+	private buildClassBinding() { 
 		this.validateInputs();
 		this.classBinding = 'card';
 
@@ -54,7 +54,14 @@ export class UICardComponent {
 		if (this.lift) { 
 			this.classBinding = `${this.classBinding} lift`
 		}
+	}
 
+	ngOnInit() {
+		this.buildClassBinding();
+	}
+
+	ngOnChanges() { 
+		this.buildClassBinding();
 	}
 
 	classBinding: string;

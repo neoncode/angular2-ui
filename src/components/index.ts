@@ -16,6 +16,8 @@ import { UIInputGroupComponent } from './ui-input/ui-input-group.component';
 import { UIAddonComponent } from './ui-input/ui-addon.component';
 import { UIPasswordComponent } from './ui-input/ui-password.component';
 import { UIFormComponent } from './ui-form/ui-form.component';
+import { UITypeaheadComponent } from './ui-typeahead/ui-typeahead.component';
+import { UILoaderCircularComponent } from './ui-loader-circular/ui-loader-circular.component';
 
 export var UI_COMPONENTS = [
 	UIButtonComponent,
@@ -35,5 +37,7 @@ export var UI_COMPONENTS = [
 	UIInputGroupComponent,
 	UIAddonComponent,
 	UIPasswordComponent,
-	UIFormComponent	
+	UIFormComponent,
+	UITypeaheadComponent,
+	UILoaderCircularComponent
 ]
