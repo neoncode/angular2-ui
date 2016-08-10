@@ -17,3 +17,4 @@ export { UI_COMPONENTS } from './components/index';
 
 //Providers
 export { UIModalService } from './services/ui-modal.service';
+export { UIResourceCacheService	} from './services/ui-resource-cache.service';

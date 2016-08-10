@@ -1,6 +1,8 @@
 import { ElementRef, Component, Input, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 
+import { UIResourceCacheService } from '../../services/ui-resource-cache.service';
+
 @Component({
 	selector: 'ui-icon',
 	template: `
@@ -10,7 +12,15 @@ import { Http } from '@angular/http';
 })
 
 export class UIIconComponent implements OnInit {
-	constructor(private http: Http, private elementRef: ElementRef) { 
+	constructor(private http: Http, private elementRef: ElementRef, private cache: UIResourceCacheService) { 
+	}
+
+	addSvg(html: string) { 
+		d3.select(this.elementRef.nativeElement)
+			.html(html)
+			.select('svg')
+			.attr('width', this.width + 'px')
+			.attr('height', this.height + 'px');
 	}
 
 	ngOnInit() { 
@@ -33,20 +43,23 @@ export class UIIconComponent implements OnInit {
 
 		if (this.svgSource != null) { 
 			//We have to get the svg and pull it into the HTML
-			this.http.get(this.svgSource)
-				.subscribe(svg => {
-					let html = svg.text();
+			//First check a cache to see if we have loaded it already...
+			let svgHtml = this.cache.getResource(this.svgSource);
+			if (svgHtml != null) { 
+				this.addSvg(svgHtml);
+			}
+			else { 
 
-
-
-					d3.select(this.elementRef.nativeElement)
-						.html(html)
-						.select('svg')
-						.attr('width', this.width + 'px')
-						.attr('height', this.height + 'px');
-				}, error => { 
-					console.log(error);
-				});
+				this.http.get(this.svgSource)
+					.subscribe(svg => {
+						let html = svg.text();
+						this.cache.setResource(this.svgSource, html);
+						this.addSvg(html);
+					}, error => { 
+						console.log(error);
+					});
+			}
+			
 		}
 
 	}

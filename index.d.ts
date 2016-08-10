@@ -1,4 +1,5 @@
 export { 
 	UI_COMPONENTS,
-	UIModalService
+	UIModalService,
+	UIResourceCacheService
 } from './dist/index';
