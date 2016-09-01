@@ -14,7 +14,7 @@ const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = new Provider(
 	template: `
 		<div class="form-group">
 			<label *ngIf="label != null">{{label}}</label>
-			<input [(ngModel)]="model" class="form-control" type="text" placeholder="{{placeholder}}" />
+			<input [(ngModel)]="model" class="form-control" type="text" placeholder="{{placeholder}}" name="{{label}}" />
 		</div>
 	`,
 	directives: [CORE_DIRECTIVES],
@@ -41,8 +41,6 @@ export class UIInputComponent implements ControlValueAccessor {
 				.node();
 
 			node.focus();
-				
-			
 		}
 		
 	}
