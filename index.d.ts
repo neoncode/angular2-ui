@@ -1,5 +1,6 @@
 export { 
-	Angular2UI,
+	Angular2UIModule,
+	UI_COMPONENTS,
 	UIModalService,
 	UIResourceCacheService
 } from './dist/index';

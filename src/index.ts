@@ -28,6 +28,29 @@ import { UIFormComponent } from './components/ui-form/ui-form.component';
 import { UITypeaheadComponent } from './components/ui-typeahead/ui-typeahead.component';
 import { UILoaderCircularComponent } from './components/ui-loader-circular/ui-loader-circular.component';
 
+export const UI_COMPONENTS = [
+	UIButtonComponent,
+	UIButtonGroupComponent,
+	UICardComponent,
+	UICardTextComponent,
+	UICardTitleComponent,
+	UICardBlockComponent,
+	UIColumnComponent,
+	UIContainerComponent,
+	UIListComponent,
+	UINavbarComponent,
+	UINavbarHeaderComponent,
+	UIRowComponent,
+	UIIconComponent,
+	UIInputComponent,
+	UIInputGroupComponent,
+	UIAddonComponent,
+	UIPasswordComponent,
+	UIFormComponent,
+	UITypeaheadComponent,
+	UILoaderCircularComponent
+]
+
 //export { UIListComponent } from './components/ui-list/ui-list.component';
 //export { UICardComponent } from './components/ui-card/ui-card.component';
 //export { UICardBlockComponent } from './components/ui-card/ui-card-block.component';
@@ -98,5 +121,5 @@ export import UIResourceCacheService = require('./services/ui-resource-cache.ser
 		UIResourceCacheService.UIResourceCacheService
 	]
 })
-export class Angular2UI { 
+export class Angular2UIModule { 
 }
