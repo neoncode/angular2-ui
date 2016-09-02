@@ -1,13 +1,13 @@
 import { Component, Input, Output, EventEmitter, Provider, forwardRef } from '@angular/core';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR, CORE_DIRECTIVES } from '@angular/common';
+import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 const noop = () => { };
 
-const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = new Provider(
-	NG_VALUE_ACCESSOR, {
+const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
+	provide: NG_VALUE_ACCESSOR, 
 		useExisting: forwardRef(() => UIPasswordComponent),
 		multi: true
-	});
+	};
 
 @Component({
 	selector: 'ui-password',
@@ -17,7 +17,6 @@ const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = new Provider(
 			<input [(ngModel)]="model" class="form-control" type="password" placeholder="{{placeholder}}" name="{{label}}" />
 		</div>
 	`,
-	directives: [CORE_DIRECTIVES],
 	providers: [CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
 })
 export class UIPasswordComponent implements ControlValueAccessor {

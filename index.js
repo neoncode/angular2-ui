@@ -1,5 +1,5 @@
 var index = require('./dist/index')
 
-exports.UI_COMPONENTS = index.UI_COMPONENTS;
+exports.Angular2UI = index.Angular2UI;
 exports.UIModalService = index.UIModalService;
 exports.UIResourceCacheService = index.UIResourceCacheService;

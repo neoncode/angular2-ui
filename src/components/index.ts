@@ -41,3 +41,4 @@ export var UI_COMPONENTS = [
 	UITypeaheadComponent,
 	UILoaderCircularComponent
 ]
+
