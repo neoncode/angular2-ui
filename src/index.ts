@@ -4,29 +4,28 @@ import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-//import { CORE_DIRECTIVES } from '@angular/common';
 
 //Components
-import { UIButtonComponent } from './components/ui-button/ui-button.component';
-import { UIButtonGroupComponent } from './components/ui-button/ui-button-group.component'
-import { UICardComponent } from './components/ui-card/ui-card.component';
-import { UICardTextComponent } from './components/ui-card/ui-card-text.component';
-import { UICardTitleComponent } from './components/ui-card/ui-card-title.component';
-import { UICardBlockComponent } from './components/ui-card/ui-card-block.component';
-import { UIColumnComponent } from './components/ui-column/ui-column.component';
-import { UIContainerComponent } from './components/ui-container/ui-container.component';
-import { UIListComponent } from './components/ui-list/ui-list.component';
-import { UINavbarComponent } from './components/ui-navbar/ui-navbar.component';
-import { UINavbarHeaderComponent } from './components/ui-navbar/ui-navbar-header.component';
-import { UIRowComponent } from './components/ui-row/ui-row.component';
-import { UIIconComponent } from './components/ui-icon/ui-icon.component';
-import { UIInputComponent } from './components/ui-input/ui-input.component';
-import { UIInputGroupComponent } from './components/ui-input/ui-input-group.component';
-import { UIAddonComponent } from './components/ui-input/ui-addon.component';
-import { UIPasswordComponent } from './components/ui-input/ui-password.component';
-import { UIFormComponent } from './components/ui-form/ui-form.component';
-import { UITypeaheadComponent } from './components/ui-typeahead/ui-typeahead.component';
-import { UILoaderCircularComponent } from './components/ui-loader-circular/ui-loader-circular.component';
+export import UIButtonComponent = require('./components/ui-button/ui-button.component');
+export import UIButtonGroupComponent = require('./components/ui-button/ui-button-group.component');
+export import UICardComponent = require('./components/ui-card/ui-card.component');
+export import UICardTextComponent = require('./components/ui-card/ui-card-text.component');
+export import UICardTitleComponent = require('./components/ui-card/ui-card-title.component');
+export import UICardBlockComponent = require('./components/ui-card/ui-card-block.component');
+export import UIColumnComponent = require('./components/ui-column/ui-column.component');
+export import UIContainerComponent = require('./components/ui-container/ui-container.component');
+export import UIListComponent = require('./components/ui-list/ui-list.component');
+export import UINavbarComponent = require('./components/ui-navbar/ui-navbar.component');
+export import UINavbarHeaderComponent = require('./components/ui-navbar/ui-navbar-header.component');
+export import UIRowComponent = require('./components/ui-row/ui-row.component');
+export import UIIconComponent = require('./components/ui-icon/ui-icon.component');
+export import UIInputComponent = require('./components/ui-input/ui-input.component');
+export import UIInputGroupComponent = require('./components/ui-input/ui-input-group.component');
+export import UIAddonComponent = require('./components/ui-input/ui-addon.component');
+export import UIPasswordComponent = require('./components/ui-input/ui-password.component');
+export import UIFormComponent = require('./components/ui-form/ui-form.component');
+export import UITypeaheadComponent = require('./components/ui-typeahead/ui-typeahead.component');
+export import UILoaderCircularComponent = require('./components/ui-loader-circular/ui-loader-circular.component');
 
 export const UI_COMPONENTS = [
 	UIButtonComponent,
@@ -51,17 +50,6 @@ export const UI_COMPONENTS = [
 	UILoaderCircularComponent
 ]
 
-//export { UIListComponent } from './components/ui-list/ui-list.component';
-//export { UICardComponent } from './components/ui-card/ui-card.component';
-//export { UICardBlockComponent } from './components/ui-card/ui-card-block.component';
-//export { UICardTextComponent } from './components/ui-card/ui-card-text.component';
-//export { UICardTitleComponent } from './components/ui-card/ui-card-title.component';
-//export { UIContainerComponent } from './components/ui-container/ui-container.component';
-//export { UIColumnComponent } from './components/ui-column/ui-column.component';
-//export { UIRowComponent } from './components/ui-row/ui-row.component';
-//export { UIButtonComponent } from './components/ui-button/ui-button.component';
-//export { UIButtonGroupComponent } from './components/ui-button/ui-button-group.component';
-
 //Providers
 export import UIModalService = require('./services/ui-modal.service');
 export import UIResourceCacheService = require('./services/ui-resource-cache.service');
@@ -73,48 +61,48 @@ export import UIResourceCacheService = require('./services/ui-resource-cache.ser
 		HttpModule
 	],
 	declarations: [
-		UIButtonComponent,
-		UIButtonGroupComponent,
-		UICardComponent,
-		UICardTextComponent,
-		UICardTitleComponent,
-		UICardBlockComponent,
-		UIColumnComponent,
-		UIContainerComponent,
-		UIListComponent,
-		UINavbarComponent,
-		UINavbarHeaderComponent,
-		UIRowComponent,
-		UIIconComponent,
-		UIInputComponent,
-		UIInputGroupComponent,
-		UIAddonComponent,
-		UIPasswordComponent,
-		UIFormComponent,
-		UITypeaheadComponent,
-		UILoaderCircularComponent
+		UIButtonComponent.UIButtonComponent,
+		UIButtonGroupComponent.UIButtonGroupComponent,
+		UICardComponent.UICardComponent,
+		UICardTextComponent.UICardTextComponent,
+		UICardTitleComponent.UICardTitleComponent,
+		UICardBlockComponent.UICardBlockComponent,
+		UIColumnComponent.UIColumnComponent,
+		UIContainerComponent.UIContainerComponent,
+		UIListComponent.UIListComponent,
+		UINavbarComponent.UINavbarComponent,
+		UINavbarHeaderComponent.UINavbarHeaderComponent,
+		UIRowComponent.UIRowComponent,
+		UIIconComponent.UIIconComponent,
+		UIInputComponent.UIInputComponent,
+		UIInputGroupComponent.UIInputGroupComponent,
+		UIAddonComponent.UIAddonComponent,
+		UIPasswordComponent.UIPasswordComponent,
+		UIFormComponent.UIFormComponent,
+		UITypeaheadComponent.UITypeaheadComponent,
+		UILoaderCircularComponent.UILoaderCircularComponent
 	],
 	exports: [
-		UIButtonComponent,
-		UIButtonGroupComponent,
-		UICardComponent,
-		UICardTextComponent,
-		UICardTitleComponent,
-		UICardBlockComponent,
-		UIColumnComponent,
-		UIContainerComponent,
-		UIListComponent,
-		UINavbarComponent,
-		UINavbarHeaderComponent,
-		UIRowComponent,
-		UIIconComponent,
-		UIInputComponent,
-		UIInputGroupComponent,
-		UIAddonComponent,
-		UIPasswordComponent,
-		UIFormComponent,
-		UITypeaheadComponent,
-		UILoaderCircularComponent
+		UIButtonComponent.UIButtonComponent,
+		UIButtonGroupComponent.UIButtonGroupComponent,
+		UICardComponent.UICardComponent,
+		UICardTextComponent.UICardTextComponent,
+		UICardTitleComponent.UICardTitleComponent,
+		UICardBlockComponent.UICardBlockComponent,
+		UIColumnComponent.UIColumnComponent,
+		UIContainerComponent.UIContainerComponent,
+		UIListComponent.UIListComponent,
+		UINavbarComponent.UINavbarComponent,
+		UINavbarHeaderComponent.UINavbarHeaderComponent,
+		UIRowComponent.UIRowComponent,
+		UIIconComponent.UIIconComponent,
+		UIInputComponent.UIInputComponent,
+		UIInputGroupComponent.UIInputGroupComponent,
+		UIAddonComponent.UIAddonComponent,
+		UIPasswordComponent.UIPasswordComponent,
+		UIFormComponent.UIFormComponent,
+		UITypeaheadComponent.UITypeaheadComponent,
+		UILoaderCircularComponent.UILoaderCircularComponent
 	],
 	providers: [
 		UIModalService.UIModalService,
