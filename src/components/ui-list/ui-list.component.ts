@@ -8,7 +8,7 @@ import { Component, Input, OnInit, OnChanges } from '@angular/core';
 		</div>
 	`
 })
-export class UIListComponent<T> implements OnInit, OnChanges  { 
+export class UIListComponent implements OnInit, OnChanges  { 
 
 	constructor() { 
 	}
@@ -19,24 +19,24 @@ export class UIListComponent<T> implements OnInit, OnChanges  {
 			//TODO: some coercion may be appropriate here...
 		}
 
-		this.viewModels = ViewModel.FromArray<T>(this.items, this.display_fn, this.active_fn);
+		this.viewModels = ViewModel.FromArray<any>(this.items, this.display_fn, this.active_fn);
 	}
 
 	ngOnChanges() { 
 
 	}
 
-	@Input() items: T[];
-	@Input('display-fn') display_fn: ((x:T) => string);
-	@Input('selected-fn') selected_fn: ((x:T) => void);
-	@Input('active-fn') active_fn: ((x:T) => boolean);
+	@Input() items: any[];
+	@Input('display-fn') display_fn: ((x:any) => string);
+	@Input('selected-fn') selected_fn: ((x:any) => void);
+	@Input('active-fn') active_fn: ((x:any) => boolean);
 
 
-	private viewModels: ViewModel<T>[];
+	viewModels: ViewModel<any>[];
 
 }
 
-class ViewModel<TModel> { 
+export class ViewModel<TModel> { 
 
 	static FromArray<TModel>(models: TModel[], display: (x: TModel) => string, active: (x: TModel) => boolean) { 
 		return models.map(x => { return new ViewModel<TModel>(x, display, active) });

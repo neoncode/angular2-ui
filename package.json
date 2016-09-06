@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "watch": "tsc && concurrently \"npm run build:w\" \"npm pack\" ",
-    "build": "tsc -p tsconfig.json",
-    "build:w": "rm -rf dist && tsc -p tsconfig.json -w",
+    "build": "ngc -p tsconfig.json",
+    "build:w": "rm -rf dist && ngc -p tsconfig.json -w",
     "postinstall": "typings install",
     "typings": "typings"
   },

@@ -60,7 +60,7 @@ export class UICardComponent {
 		this.buildClassBinding();
 	}
 
-	ngOnChanges() { 
+	ngOnChanges(changes) { 
 		this.buildClassBinding();
 	}
 

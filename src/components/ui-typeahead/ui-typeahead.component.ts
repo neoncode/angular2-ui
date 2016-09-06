@@ -8,7 +8,7 @@ import { Observable } from 'rxjs/Observable';
 	template: `
 		<input class="form-control" autocomplete="off" [(ngModel)]="searchText" />
 		<div class="dropdown-menu  search-results">
-        	<a *ngFor="let item of list" class="dropdown-item" (click)="onClick(item)">{{item}}</a>
+        	<a *ngFor="let item of searchResults" class="dropdown-item" (click)="onClick(item)">{{item}}</a>
         </div>
 	`
 })
@@ -21,7 +21,7 @@ export class UITypeaheadComponent implements OnInit, OnChanges {
 	public searchText: string;
 
 	public searchResults: string[];
-
+	
 	constructor() { 
 	}
 	
