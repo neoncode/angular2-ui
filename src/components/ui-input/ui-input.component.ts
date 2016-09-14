@@ -1,11 +1,11 @@
-import { Component, Input, Output, EventEmitter, Provider, forwardRef, ElementRef } from '@angular/core';
+import { Component, Input, Output, EventEmitter, Provider, forwardRef, OpaqueToken, Type, ElementRef } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 const noop = () => { };
 
-const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
-	provide: NG_VALUE_ACCESSOR, 
-		useExisting: forwardRef(() => UIInputComponent),
+export const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
+	provide: <OpaqueToken>NG_VALUE_ACCESSOR, 
+		useExisting: <Type<any>>forwardRef(() => UIInputComponent),
 		multi: true
 	};
 
