@@ -1,7 +1,7 @@
-///<reference path="../typings/main/ambient/d3/index.d.ts" />
-///<reference path="../typings/main/ambient/jquery/index.d.ts" />
+
+
 import { NgModule } from '@angular/core';
-import { BrowserModule }  from '@angular/platform-browser';
+import { CommonModule }  from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
@@ -63,7 +63,7 @@ export { UIResourceCacheService } from './services/ui-resource-cache.service';
 
 @NgModule({
 	imports: [
-		BrowserModule,
+		CommonModule,
 		FormsModule,
 		HttpModule
 	],

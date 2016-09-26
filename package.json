@@ -6,9 +6,7 @@
   "scripts": {
     "watch": "tsc && concurrently \"npm run build:w\" \"npm pack\" ",
     "build": "ngc -p tsconfig.json",
-    "build:w": "rm -rf dist && ngc -p tsconfig.json -w",
-    "postinstall": "typings install",
-    "typings": "typings"
+    "build:w": "rm -rf dist && ngc -p tsconfig.json -w"
   },
   "repository": {
     "type": "git",
@@ -32,16 +30,19 @@
     "@angular/router": "3.0.0",
     "core-js": "^2.4.1",
     "reflect-metadata": "0.1.2",
-    "rxjs": "5.0.0-beta.11",
-    "zone.js": "0.6.17",
+    "rxjs": "5.0.0-beta.12",
+    "zone.js": "0.6.21",
     "angular2-in-memory-web-api": "0.0.9",
     "bootstrap": "4.0.0-alpha.2",
-    "d3": "^3.5.16"
+    "d3": "3.5.16"
   },
   "devDependencies": {
+    "@types/core-js": "0.9.34",
+    "@types/jasmine": "^2.2.34",
+    "@types/jquery": "2.0.32",
+    "@types/d3": "3.5.36",
     "concurrently": "^2.0.0",
     "lite-server": "^2.2.0",
-    "typescript": "^2.0.0",
-    "typings": "^0.8.1"
+    "typescript": "2.0.2"
   }
 }

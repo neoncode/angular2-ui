@@ -1,6 +1,6 @@
 import { ElementRef, Component, Input, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
-
+import * as d3 from '@types/d3';
 import { UIResourceCacheService } from '../../services/ui-resource-cache.service';
 
 @Component({

@@ -1,5 +1,5 @@
 import { Injectable, ElementRef } from '@angular/core';
-
+import * as d3 from '@types/d3';
 
 /**
 	Access to a set of options for displaying modal dialogs to the user.
