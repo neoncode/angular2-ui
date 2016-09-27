@@ -17,11 +17,18 @@
   "bugs": {
     "url": "https://github.com/cummingsi1993/angular2-ui/issues"
   },
+  "types": [
+    "d3",
+    "core-js",
+    "jasmine",
+    "jquery"
+  ],
   "homepage": "https://github.com/cummingsi1993/angular2-ui#readme",
   "dependencies": {
     "grunt": "^1.0.1",
     "@angular/common": "2.0.0",
     "@angular/compiler": "2.0.0",
+    "@angular/compiler-cli": "0.6.2",
     "@angular/core": "2.0.0",
     "@angular/forms": "2.0.0",
     "@angular/http": "2.0.0",
