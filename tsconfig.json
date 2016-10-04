@@ -10,6 +10,10 @@
     "outDir": "./dist",
     "declaration": true
   },
+  "types": [
+    "d3",
+    "jquery"
+  ],
   "files": [
     "src/index.ts"
   ]
