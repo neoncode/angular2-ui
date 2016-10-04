@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, Provider, forwardRef, OpaqueToken, Type, ElementRef } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import * as d3 from '@types/d3';
+import * as d3 from 'd3'
 const noop = () => { };
 
 export const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {

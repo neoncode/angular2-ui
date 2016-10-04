@@ -1,6 +1,6 @@
 import { Injectable, ElementRef } from '@angular/core';
-import * as d3 from '@types/d3';
-
+import * as d3 from 'd3';
+import * as $ from 'jquery';
 /**
 	Access to a set of options for displaying modal dialogs to the user.
 	Multiple levels of modals are not supported. If a modal is called to pop up with an existing modal already present an error will be presented.
