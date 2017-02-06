@@ -30,7 +30,7 @@ export class UITypeaheadComponent implements OnInit, OnChanges {
 
 	}
 
-	ngOnChanges() { 
+	ngOnChanges(changes) { 
 		this.search(this.searchText).subscribe(results => { 
 			this.searchResults = results;
 		});

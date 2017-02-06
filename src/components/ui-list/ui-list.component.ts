@@ -22,7 +22,7 @@ export class UIListComponent implements OnInit, OnChanges  {
 		this.viewModels = ViewModel.FromArray<any>(this.items, this.display_fn, this.active_fn);
 	}
 
-	ngOnChanges() { 
+	ngOnChanges(changes) { 
 
 	}
 
